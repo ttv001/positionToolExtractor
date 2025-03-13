@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "TV Position Tool Data Extractor",
+  "version": "1.0",
+  "description": "Displays Long/Short Position data in popup",
+  "permissions": ["activeTab", "clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.tradingview.com/chart/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
