@@ -6,7 +6,22 @@
   "permissions": ["activeTab", "clipboardWrite"],
   "content_scripts": [
     {
-      "matches": ["https://www.tradingview.com/chart/*"],
+      "matches": [
+        "*://*.tradingview.com/chart/*",
+        "*://in.tradingview.com/chart/*",
+        "*://de.tradingview.com/chart/*",
+        "*://fr.tradingview.com/chart/*",
+        "*://it.tradingview.com/chart/*",
+        "*://de.tradingview.com/chart/*",
+        "*://pl.tradingview.com/chart/*",
+        "*://tr.tradingview.com/chart/*",
+        "*://ru.tradingview.com/chart/*",
+        "*://br.tradingview.com/chart/*",
+        "*://il.tradingview.com/chart/*",
+        "*://jp.tradingview.com/chart/*",
+        "*://kr.tradingview.com/chart/*",
+        "*://cn.tradingview.com/chart/*",
+        "*://es.tradingview.com/chart/*"],
       "js": ["content.js"]
     }
   ],
